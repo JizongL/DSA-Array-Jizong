@@ -11,6 +11,7 @@ class Array {
         this._capacity = 0;
         this.ptr = Memory.allocate(this.length)
     }
+    
 
     push(value){
         if(this.length>= this._capacity){
@@ -71,6 +72,9 @@ function main(){
   arr.pop();
   arr.pop();
   console.log(arr);
+  console.log(arr.get(0))
+  arr.empty()
+  console.log(arr.get())
 }
 
 main()
